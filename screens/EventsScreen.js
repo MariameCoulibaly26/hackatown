@@ -13,50 +13,32 @@ import {
 } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 
-import Modes from '../constants/Modes'
-
+import {nav} from '../utils'
 
 var {height, width} = Dimensions.get('window');
 
-export default class Menu extends Component {
+export default class Events extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      data: Modes
+      data: [
+        {id: 1, title: "Hackatown 2020", location: "", color:"#FF69B4", image: require("../assets/images/meeting.png")} ,
+      ]
     };
-  }
-
-  nav(stack, screen) {
-    this.props.navigation.navigate(NavigationActions.navigate({
-      routeName: stack,
-      action: NavigationActions.navigate({routeName: screen})
-    }));
+    this.nav = nav.bind(this)
   }
 
   async clickEventListener(item) {
-    await AsyncStorage.setItem('mode', String(item.id));
-    Alert.alert(item.title)
-    switch(item.id){
-      case 1:
-        this.nav('SettingsStack', 'Settings');
-        break;
-      case 2:
-        this.props.navigation.navigate('Events');
-        break;
-      case 3:
-        this.nav('SettingsStack', 'Settings');
-        break;
-      default:
-        break;
-    }
-    
+    await AsyncStorage.setItem('currentEventObj', JSON.stringify(item));
+    Alert.alert(item.title);
+    this.nav('SettingsStack', 'Settings');
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.header}>Choose a mode</Text>
+        <Text style={styles.header}>Choose an Event</Text>
         <FlatList style={styles.list}
           contentContainerStyle={styles.listContainer}
           data={this.state.data}
@@ -83,7 +65,6 @@ const styles = StyleSheet.create({
     marginTop:20,
   },
   list: {
-    //paddingHorizontal: 5,
     backgroundColor:"#E6E6E6",
   },
 

@@ -8,6 +8,7 @@ import HomeScreen from '../screens/HomeScreen';
 import ModeScreen from '../screens/ModeScreen';
 import FindMeScreen from '../screens/FindMeScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+import EventsScreen from '../screens/EventsScreen';
 
 const config = Platform.select({
   web: { headerMode: 'screen' },
@@ -17,6 +18,7 @@ const config = Platform.select({
 const HomeStack = createStackNavigator(
   {
     Home: ModeScreen,
+    Events: EventsScreen
   },
   config
 );
@@ -69,12 +71,24 @@ SettingsStack.navigationOptions = {
 
 SettingsStack.path = '';
 
-const tabNavigator = createBottomTabNavigator({
+function withParentNav (Nav) {
+  return class WrappedNav extends React.Component {
+    constructor(props) {
+      super(props);
+      console.log(this.navigator)
+    }
+    render () {
+      return <Nav {...this.props} screenProps={this.props.navigation} />
+    }
+  }
+}
+
+const TabNavigator = createBottomTabNavigator({
   HomeStack,
   SettingsStack,
-  MeetStack,
+  MeetStack
 });
 
-tabNavigator.path = '';
+TabNavigator.path = '';
 
-export default tabNavigator;
+export default TabNavigator;

@@ -27,7 +27,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.company",
+      "package": "com.spontane",
       "config": {
           "googleMaps": {
             "apiKey": "AIzaSyAP0TqVMMkYJgAyPoG8H8jKTL6bkrG29PY"
