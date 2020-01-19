@@ -15,7 +15,7 @@ export default class Users extends Component {
 
   constructor(props) {
     super(props);
-    let imgUser = "../assets/images/avatar.png";
+    let imgUser = require("../assets/images/avatar.png");
     this.state = {
       data: [
         {id:1, color:"#FF4500", icon: imgUser, name: "Angèle", tags: ['Histoire médiévale', 'React-native', 'Soccer']},
@@ -67,7 +67,7 @@ export default class Users extends Component {
             return (
               <TouchableOpacity style={[styles.card, {borderColor:item.color}]} onPress={() => {this.cardClickEventListener(item)}}>
                 <View style={styles.cardContent}>
-                  <Image style={[styles.image, styles.imageContent]} source={require(item.icon)}/>
+                  <Image style={[styles.image, styles.imageContent]} source={item.icon}/>
                   <Text style={styles.name}>{item.name}</Text>
                 </View>
                 <View style={[styles.cardContent, styles.tagsContent]}>

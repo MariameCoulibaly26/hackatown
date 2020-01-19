@@ -12,6 +12,7 @@ import {
   AsyncStorage
 } from 'react-native';
 import { NavigationActions } from 'react-navigation';
+import {currentEventObj} from '../constants/StoreKeys';
 
 import {nav} from '../utils'
 
@@ -23,14 +24,15 @@ export default class Events extends Component {
     super(props);
     this.state = {
       data: [
-        {id: 1, title: "Hackatown 2020", location: "", color:"#FF69B4", image: require("../assets/images/meeting.png")} ,
+        {id: 1, title: "Hackatown 2020", location: [37, -122], locationAddress: "", color:"#FF69B4", image: require("../assets/images/meeting.png"),
+         tags: ['Sustainable Development', 'IoT', 'Data Science', 'Python', 'React', 'C++', 'GenetecChallenge']} ,
       ]
     };
     this.nav = nav.bind(this)
   }
 
   async clickEventListener(item) {
-    await AsyncStorage.setItem('currentEventObj', JSON.stringify(item));
+    await AsyncStorage.setItem(currentEventObj, JSON.stringify(item));
     Alert.alert(item.title);
     this.nav('SettingsStack', 'Settings');
   }
