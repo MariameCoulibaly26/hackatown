@@ -1,0 +1,641 @@
+Aerospace
+Astronaut (or cosmonaut , astronaut )
+Air Controller
+Air conveyor
+Stewardess, flight attendant
+Aeronautic engineer
+Aircraft mechanic
+Air Navigator
+Pilot
+Fighter pilot
+Helicopter pilot
+Food and catering
+Bartender
+Butcher
+Baker
+Baker
+pork butcher
+Chocolatier
+Clerk
+Confectioner
+crêpier
+Food critic
+Cook
+Dietitian
+chip
+entremetier
+cheesemonger
+Pantry
+Glacier
+corkscrew
+confectioner
+pizzaiolo
+Diver
+Fishmonger
+Primeur
+restaurateur
+roaster
+Saucier
+Server
+wine waiter
+Culinary tester
+caterer
+Agriculture , hunting , fishing and farming
+Farmer
+Beekeeper
+aquaculturist
+Shepherd
+Hunter
+grower
+Farmer
+farmer
+horticulturist
+Agronomist
+Forest engineer
+Gardener
+mussel
+oyster
+Grounds
+Sinner
+Nurseryman
+forester
+Viticulturalist , or winemaker
+Arts and crafts
+Piano tuner
+Archetier
+Gunsmith
+Jeweler
+Brodeur
+ceramist
+milliner
+coppersmith
+chaser
+Hairdresser
+Shoemaker
+corsetry
+costume
+Cutler
+dressmaker
+Roofer locksmith
+Cook
+dentellier
+Dinancier
+Cabinetmaker
+illuminator
+beautician
+Évantailliste
+Instrument factor
+ironworker
+Black-smith
+glover
+Watchmaker
+Lapidary
+Laqueur
+luthier
+Builder
+Makeup artist ( makeup )
+Maroquinier
+marquetry
+Carpenter
+model maker
+Milliner
+Goldsmith
+Perruquier - posticheur
+plumassier
+Potter
+Bookbinder
+Restorer (restoration of objects, etc.)
+Sculptor
+saddler
+Locksmith
+saddler
+setter
+Tailor
+Tanner
+Taxidermist
+Dry cleaner
+Weaver
+Cooper
+basket-maker
+glass-blower
+Stained
+Sailboat saddler
+Arts and entertainment
+( Instrument ) tuner
+props
+Actor
+Acrobat
+Show host
+Landscape architect
+Artificer
+Author
+Librarian
+buzzer
+Cameraman
+Singer
+clown
+Actor
+Composer
+Museum curator
+Dancer
+Designer
+Designate
+Artistic director
+Gallery director
+Casting director
+Tamer
+Dialogue
+lighting
+Editor
+contained
+engraver
+graphic artist
+Humorist
+Illustrator
+Copycat
+Graphic Designer
+Sound engineer
+Juggler
+Makeup artist
+Director
+Mime
+Editor
+Musician
+Painter
+Photographer
+conjuror
+Drama (or drama ) teacher
+Dance teacher
+projectionist
+Director
+Scriptwriter
+Sculptor
+Script
+Building
+Land developer
+Architect
+Landscape architect
+Interior space planner
+insulator
+tiler
+Carpenter
+heating engineer
+cordiste
+slater
+Roofer locksmith
+Construction Economist
+Electrician
+Escaliéteur
+roofer
+façadier
+refrigeration
+geometer
+Builder
+Carpenter
+parqueteur
+House painter
+plaquiste
+Plasterer
+Plumber
+Real estate developer
+Ornamentalist staffer
+Stonecutter
+Glazier
+Trade
+Buyer
+Help cashier
+Commercial animator
+Jeweler watchmaker
+Butcher
+Baker
+tobacconist
+Cashier
+Cellar
+pork butcher
+shoemaker
+Department manager
+Commercial
+Shoemaker
+Cuisiniste
+Broker
+creamer
+Retailer
+Record Store
+druggist
+Grocer
+dresser
+Florist
+Cheese artisan
+Coffee boy
+Wholesaler
+Sales Engineer
+Dairy
+Bookseller
+Delivery man
+Newspaper seller
+Optician
+confectioner
+Fishmonger
+Telemarketer
+Trader
+caterer
+Seller
+Traveler representative placeman (VRP)
+Law
+Judiciary Administrator
+Lawyer
+attorney
+notary clerk
+Legal expert
+Clerk
+Bailiff
+Judge
+Family judge
+Sentencing judge
+Judge children
+Guardianship judge
+Magistrate
+Judge
+Liquidator
+Magistrate
+Notary
+prosecutor
+Deputy Prosecutor
+General Substitute
+Editing
+Author
+Manufacturing Manager
+corrector
+Editorial director
+Collection Director
+Editor
+model maker
+reviewer
+Editorial manager
+Teaching and research
+Help and Information
+Head of laboratory
+Searcher
+Education advisor
+Psychological guidance counselor
+Educational senior advisor
+librarian
+Teacher
+Faculty Member
+Research engineer
+School teacher / teacher
+Lecturer
+Professional counselor
+Professor
+Principal
+School psychologist
+supervisor
+Laboratory technician
+Business
+Buyer
+purveyor
+Administrative and financial director
+Marketing Director
+Human Resources Director
+Accounting
+Consolidator
+overseer
+Management control
+Administrative employee
+tax expert
+Logistician
+Worker
+President and CEO
+Quality Engineer
+Receptionist
+Secretary
+telephonist
+Treasurer
+Seller
+Interview
+Sweeper
+dustman
+Surface technician
+Maid
+Finance
+Actuary
+Credit analyst
+Financial Analyst
+Insurance agent
+Stockbroker
+Auditor
+trader
+Account Manager
+Commercial
+Auditor
+Financial Advisor
+Tax advisor
+Management control
+Risk controller
+Stock broker
+Insurance broker
+Compliance Officer
+Agency Director
+Market Director
+Agency network director
+Commitment Director
+Financial director
+Insurance employee
+Bank employee
+Accountant
+Wealth manager
+Portfolio manager
+Financial engineer
+Notary
+Market operator or trader
+Treasurer
+printing house
+chromiste
+keyboarder
+Driver
+Copyist
+corrector
+performer
+Maker
+Graphic Designer
+linotype
+Lithographer
+Ludlowiste
+model maker
+Feeder
+Massicotier
+Editor
+Incorporator
+Operator
+Photocompositeur
+repro
+pressman
+reviewer
+Bookbinder
+Silkscreen
+Typographer
+Industry
+Adjuster
+automaticien
+Chemist
+Searcher
+Designate
+Electrician
+hydraulics
+Engineer
+Sales Engineer
+Chemical Engineer
+Laborantin
+Mechanic
+Operator
+Welder
+Technician
+Technologist
+Computer science
+Database administrator
+Network administrator
+System administrator
+Analyst
+System architect
+IT Project Manager
+cogniticien
+IT consultant
+developer
+Technical director
+librarian
+Software ergonomist
+IT asset manager
+Graphic Designer
+Integrator
+Programmer
+Documentation Writer
+Business manager
+Security officer
+Téléassistant
+Network technician
+Tester
+Web Designer
+Webmaster
+Language and writing
+Actor
+Help and Information
+Librarian
+Biographer
+Calligraph
+Singer
+Actor
+Storyteller
+corrector
+Literary criticism
+librarian
+Writer
+Public Writer
+Editor
+Printer
+Computer Graphics
+Interpreter
+linguist
+Translator
+Typographer
+Marketing and communication
+Art buyer
+Strategic planner
+Marketing analyst
+Communication Manager
+Product manager
+Head of advertising
+Designer Editor
+Designate
+Artistic director
+Creative Director
+Media-glider
+roughman
+Webmarketer
+Media
+Television animator
+Cameraman
+infopreneur
+Sound engineer
+Journalist
+Photographer
+Freelance
+Producer
+Director
+Report
+Copyeditor
+Politics
+Parliamentary Assistant
+Chief of Staff
+General Counsel
+City councilor
+National Councilor
+Regional Councilor
+Deputy
+Diplomat
+Chief of Staff
+Politician
+Statesman
+Mayor
+Prefect
+minister
+Prime Minister
+President of the Confederation
+President of the Republic
+Secretary of State
+senator
+Undertaker
+embalmer
+Gravedigger
+Health
+Anesthetist
+Dental assistant
+Surgeon
+Occupational therapist
+Dental Hygienist
+Male nurse
+Respiratory Therapist
+physiotherapist
+Laborantin
+Doctor
+Speech Therapist
+osteopath
+Pediatrician
+Pharmacist
+Parapharmacien
+Dentist
+Psychiatrist
+Psychologist
+Midwife
+science
+anthropologist
+archaeologist
+Astronomer
+astrophysicist
+Botanist
+Biologist
+Biochemist
+biophysicist
+biomathematician
+Searcher
+Chemist
+behaviourist
+cryptologist
+Egyptologist
+exobiologist
+Explorer
+Economist
+ethologist
+ethnologist
+Geologist
+glaciologist
+Mathematician
+Meteorologist
+paleontologist
+Physicist
+Refiner
+Seismologist
+Sociologist
+Statistician
+security
+Security agent
+ambulance
+Executioner
+Detective
+Minesweeper
+Spy
+Bodyguard
+gendarme
+Military
+Police officer
+Firefighter
+Sheriff
+Social
+Sociocultural animator
+Social worker
+Family assistant
+Maternal assistant
+Child care assistant
+Social and Family Economy Advisor (CESF)
+Guardianship delegate
+Special educator
+Early childhood educator
+Educator monitor
+Social and Family Intervention Technician (TISF)
+Sport
+Arbitrator
+Sports trainer
+High mountain guide
+Sports journalist
+physiotherapist
+Diving instructor
+Sports teacher
+Professional athlete
+Tourism
+Travel guide
+Tourist animator
+Tourist welcome agent
+Reservation agent
+Tourism and cultural engineering consultant
+Director of a tourist office
+Room maid
+Forfaitiste
+Tour guide
+High mountain guide
+Governess
+Hotel and restaurant
+Transport and logistics
+shipper
+Train commercial agent
+switchman
+Air trafic controller
+Shipowner
+waterman
+truck driver
+Ship captain
+cariste
+Charger
+Bus driver
+Delivery driver
+Truck driver
+Taxi driver
+Large Discount Driver
+Small Discount Driver
+Funicular train conductor
+Head of Service
+Captain
+Train conductor
+Tram driver
+Controller
+Fund conveyor
+Éclusier
+warehouse owner
+Mover
+Docker
+mechanic
+Stewardess, flight attendant
+Logistician
+Marine
+storekeeper
+Mechanic
+Driving school instructor
+Péagiste
+Airline pilot
+Gas station attendant
+Regulator
+Carrier
+Illegal "activities"
+Money launderer
+Burglar
+Smuggler
+Dealer (drugs)
+slaver
+Forger
+ferryman
+Pickpocket
+Hacker
+procurer
+receiver
+Trafficker
+Hitman
+Thief
+Prostitute
