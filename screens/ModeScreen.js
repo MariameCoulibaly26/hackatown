@@ -19,6 +19,9 @@ import Modes from '../constants/Modes'
 var {height, width} = Dimensions.get('window');
 
 export default class Menu extends Component {
+  static navigationOptions = {
+  title: 'Encounters',
+};
 
   constructor(props) {
     super(props);
@@ -36,7 +39,6 @@ export default class Menu extends Component {
 
   async clickEventListener(item) {
     await AsyncStorage.setItem('mode', String(item.id));
-    Alert.alert(item.title)
     switch(item.id){
       case 1:
         this.nav('SettingsStack', 'Settings');

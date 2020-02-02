@@ -12,7 +12,7 @@ import {
   AsyncStorage
 } from 'react-native';
 import { NavigationActions } from 'react-navigation';
-import {currentEventObj} from '../constants/StoreKeys';
+import Keys from '../constants/StoreKeys';
 
 import {nav} from '../utils'
 
@@ -32,7 +32,7 @@ export default class Events extends Component {
   }
 
   async clickEventListener(item) {
-    await AsyncStorage.setItem(currentEventObj, JSON.stringify(item));
+    await AsyncStorage.setItem(Keys.currentEventObj, JSON.stringify(item));
     Alert.alert(item.title);
     this.nav('SettingsStack', 'Settings');
   }

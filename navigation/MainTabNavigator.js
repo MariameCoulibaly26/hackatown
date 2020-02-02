@@ -9,6 +9,8 @@ import ModeScreen from '../screens/ModeScreen';
 import FindMeScreen from '../screens/FindMeScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import EventsScreen from '../screens/EventsScreen';
+import UsersScreen from '../screens/UsersScreen';
+
 
 const config = Platform.select({
   web: { headerMode: 'screen' },
@@ -41,6 +43,7 @@ HomeStack.path = '';
 
 const MeetStack = createStackNavigator(
   {
+    Users: UsersScreen,
     FindMe: FindMeScreen,
   },
   config

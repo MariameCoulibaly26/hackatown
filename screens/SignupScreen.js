@@ -10,18 +10,99 @@ import {
   Alert
 } from 'react-native';
 
+import * as firebase from 'firebase'
+import firebaseConfig from '../constants/FirebaseConfig'
+
+var db = firebase.firestore();
+
 export default class Signup extends Component {
 
   constructor(props) {
     super(props);
-    state = {
-      email   : '',
+    this.state = { 
+      userId: '',
+      email: '',
       password: '',
-    }
+      password_confirm: '',
+      error: null,
+      authSubscription: null,
+      isLoading: true,
+      showPass: true,
+      press: false,
+    };
+  }
+
+  _googleSignIn(){
+    
+    var provider = new firebase.auth.GoogleAuthProvider();
+
+    firebase.auth().signInWithPopup(provider).then(function(result) {
+      // This gives you a Google Access Token. You can use it to access the Google API.
+      var token = result.credential.accessToken;
+      // The signed-in user info.
+      var user = result.user;
+      // ...
+    }).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // The email of the user's account used.
+      var email = error.email;
+      // The firebase.auth.AuthCredential type that was used.
+      var credential = error.credential;
+      // ...
+    });
+
+  }
+
+  _signUpUser() {
+
+    this.setState({
+      isLoading: true,
+    });
+
+    var email = this.state.email
+    var password = this.state.password
+    var password_confirm = this.state.password_confirm
+
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+      .then(() => {
+
+        this.setState({
+          isLoading: false,
+        });
+
+        alert("Félicitation, votre compte vient d'être créé. Vous pouvez vous connecté")    
+        this.props.navigation.navigate('LoginScreen');
+      })
+      .catch(function(error) {
+
+        this.setState({
+          isLoading: false,
+        });
+
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        
+        if (errorCode == 'auth/weak-password') {
+          alert('Votre mot de passe est trop faible.');
+        }   
+        if (errorCode === 'auth/invalid-email') {
+          const message = `Votre adresse mail n'est pas valide. Assurez-vous que cela a bien été renseigné.`;
+          alert(message)
+        }     
+        if (errorCode === 'auth/email-already-in-use') {
+          const message = `Un compte avec cette adresse mail existe déjà. Veillez choisir un autre compte.`;
+          alert(message)
+        }
+
+      });
   }
 
   onClickListener = (viewId) => {
-    Alert.alert("Alert", "Button pressed "+viewId);
+    if (viewId === 'register'){
+      this._signUpUser()
+    }
   }
 
   render() {
@@ -32,7 +113,7 @@ export default class Signup extends Component {
           <TextInput style={styles.inputs}
               placeholder="Full name"
               underlineColorAndroid='transparent'
-              onChangeText={(email) => this.setState({email})}/>
+              onChangeText={(name) => this.setState({name})}/>
           <Image style={styles.inputIcon} source={{uri: 'https://img.icons8.com/color/40/000000/circled-user-male-skin-type-3.png'}}/>
         </View>
 
@@ -53,18 +134,30 @@ export default class Signup extends Component {
               onChangeText={(password) => this.setState({password})}/>
           <Image style={styles.inputIcon} source={{uri: 'https://img.icons8.com/color/40/000000/password.png'}}/>
         </View>
+        <View style={styles.inputContainer}>
+          <Text>Add 3 things that you love !</Text>
+        </View>
+        <View style={styles.inputContainer}>
+          <TextInput style={styles.inputs}
+              placeholder="1st"
+              underlineColorAndroid='transparent'
+              onChangeText={(tag1) => this.setState({tag1})}/>
+        </View>
+        <View style={styles.inputContainer}>
+          <TextInput style={styles.inputs}
+              placeholder="2nd"
+              underlineColorAndroid='transparent'
+              onChangeText={(tag2) => this.setState({tag2})}/>
+        </View>
+        <View style={styles.inputContainer}>
+          <TextInput style={styles.inputs}
+              placeholder="3rd"
+              underlineColorAndroid='transparent'
+              onChangeText={(tag3) => this.setState({tag3})}/>
+        </View>
 
-        <TouchableOpacity style={styles.btnByRegister} onPress={() => this.onClickListener('restore_password')}>
-            <Text style={styles.textByRegister}>By registering on this App you confirm that you have read and accept our policy</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={[styles.buttonContainer, styles.loginButton]} onPress={() => this.onClickListener('login')}>
-          <Text style={styles.loginText}>Login</Text>
-        </TouchableOpacity>
-
-
-        <TouchableOpacity style={styles.buttonContainer} onPress={() => this.onClickListener('register')}>
-            <Text style={styles.btnText}>Have an account?</Text>
+        <TouchableOpacity style={[styles.buttonContainer, styles.loginButton]} onPress={() => this.onClickListener('register')}>
+          <Text style={styles.loginText}>Register</Text>
         </TouchableOpacity>
       </View>
     );

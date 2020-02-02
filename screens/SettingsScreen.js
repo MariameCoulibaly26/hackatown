@@ -2,16 +2,16 @@ import React from 'react';
 import {AsyncStorage, Alert, StyleSheet, View, TouchableOpacity, Text} from 'react-native';
 
 import {nav} from '../utils'
-import {activeTags} from '../constants/StoreKeys';
+import Keys from '../constants/StoreKeys';
 import Colors from '../constants/Colors';
 
 export default class SettingsScreen extends React.Component {
 	constructor(props){
 		super(props);
 		this.nav = nav.bind(this);
-		const interests = ['biology', 'soccer', 'camping', 'AlbertaRoadtripSummer2020'];
 		let tags = {};
-		interests.map((t) => {tags[t] = true});
+		console.log('activeTags', Keys.activeTags);
+		this.loadData();
 		this.state = {
 			tags,
 			disabledInterests: []
@@ -22,16 +22,27 @@ export default class SettingsScreen extends React.Component {
 
 	}
 
+	async loadData(){
+		const interests = ['biology', 'soccer', 'camping', 'AlbertaRoadtripSummer2020'];
+		let tags = {};
+		try {
+			const prevChoices = JSON.parse(await AsyncStorage.getItem(Keys.activeTags) || '{}');
+			interests.map((t) => {tags[t] = prevChoices[t] === false ? false : true});
+		} catch (e) {
+			interests.map((t) => {tags[t] = true});
+		}
+		this.setState({tags})
+	}
+
 	tagClickEventListener = (tagName) => {
 		if (this.state.tags[tagName])
 			this.setState(state => ({...state, tags: {...state.tags, [tagName]: false}}))
 		else 
 			this.setState(state => ({...state, tags: {...state.tags, [tagName]: true}}))
-		Alert.alert(tagName);
 	}
 
 	async goToMeet() {
-		await AsyncStorage.setItem(activeTags, this.state.activeTags);
+		await AsyncStorage.setItem(Keys.activeTags, JSON.stringify(this.state.tags));
 		this.nav('MeetStack', 'FindMe')
 	}
 
@@ -61,7 +72,7 @@ export default class SettingsScreen extends React.Component {
 		else
 			return <View style={styles.container}>
 				{this.renderTags(Object.keys(this.state.tags))}
-			  	<TouchableOpacity style={[styles.buttonContainer, styles.confirmButton]} onPress={this.goToMeet}>
+			  	<TouchableOpacity style={[styles.buttonContainer, styles.confirmButton]} onPress={this.goToMeet.bind(this)}>
 		          <Text style={styles.confirmText}>Confirm</Text>
 		        </TouchableOpacity>
 			</View>
