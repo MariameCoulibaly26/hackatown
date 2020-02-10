@@ -5,7 +5,7 @@ Il suffit de cloner le dépôt localement et dans le dossier racine exécuter ce
 ```
 npm install -g yarn
 yarn install
-yar add global expo-cli
+yarn add global expo-cli
 ```
 
 ## Tester l'application sur son propre téléphone
